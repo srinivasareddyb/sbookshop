@@ -1,0 +1,31 @@
+
+#### Books Get
+GET http://localhost:4004/odata/v4/catalog/Books?$expand=author
+
+### Books POST
+POST http://localhost:4004/odata/v4/catalog/Books
+Content-Type: application/json
+
+{ "ID": 1, "title": "Life","stock": 101, "author_ID": 455}
+
+
+
+#### Authors Get
+GET http://localhost:4004/odata/v4/catalog/Authors
+
+#### Authors Post
+POST http://localhost:4004/odata/v4/catalog/Authors
+Content-Type: application/json
+
+{"ID" : 455, "name": "Srinivasa Reddy B"}
+
+
+
+#### Orders Get
+GET http://localhost:4004/odata/v4/catalog/Orders
+
+#### Orders Post
+POST http://localhost:4004/odata/v4/catalog/Orders
+Content-Type: application/json
+
+{"book_ID" : 421, "quantity" :10}
